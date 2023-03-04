@@ -1,0 +1,17 @@
+{
+    "name": "api-schema",
+    "version": "1.0.0",
+    "description": "api document",
+    "private": true,
+    "scripts": {
+      "docs": "redoc-cli serve ./openapi.yml",
+      "docs:build": "redoc-cli bundle ./openapi.yml -o ./public/index.html",
+      "mock": "prism mock ./openapi.yml"
+    },
+    "license": "MIT",
+    "dependencies": {
+      "@stoplight/prism-cli": "^4.1.0",
+      "redoc-cli": "^0.9.12"
+    }
+  }
+  
